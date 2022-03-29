@@ -42,5 +42,5 @@ Then('he should see his car\'s selection summary',() => {
 })
 
 Then('he should see the data entered',() => {
-    cy.log('Page not working');
+    cy.log(' >>>> ! Page not working ! <<<<');
 })
