@@ -2,7 +2,7 @@ Feature: Rent car
 
     The customer wants to rent a car through the site
 
-    Background: Background name
+    Background: Initial steps
         Given the Customer is on the car rental site
         When he to enters the data country "Poland" city "Wroclaw" model "Suzuki"
 
