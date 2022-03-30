@@ -10,6 +10,13 @@ class userDataPage{
             locators.elements.email().type(data.email);
         })
     }
+
+    checkErrorMessages = () => {
+        expect(locators.elements.labelErrorName()).to.exist;
+        expect(locators.elements.labelErrorLastName()).to.exist;
+        expect(locators.elements.labelErrorCardNumber()).to.exist;
+        expect(locators.elements.labelErrorEmail()).to.exist;
+    }
 }
 
 export default new userDataPage();

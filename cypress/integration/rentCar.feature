@@ -19,8 +19,8 @@ Feature: Rent car
         And he selects a car
         Then he should see his car's selection summary
 
-    Scenario: Enter user data
+    Scenario: Customer data with incorrect values
         And he to enters the dates "2022-04-11" "2022-04-27"
         And he selects a car
-        And he enter his data
-        Then he should see the data entered
+        And he enter his data with incorrect values
+        Then he should see multiple error messages

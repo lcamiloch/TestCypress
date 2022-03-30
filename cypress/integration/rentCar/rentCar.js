@@ -23,7 +23,7 @@ And('he selects a car', () => {
     homePage.selectCar();
 })
 
-And('he enter his data', () => {
+And('he enter his data with incorrect values', () => {
     homePage.clickOnSearchButton();
     userDataPage.setUserData();
     homePage.clickOnSearchButton();
@@ -41,6 +41,6 @@ Then('he should see his car\'s selection summary',() => {
     summaryCarPage.checkSummaryCarPage();
 })
 
-Then('he should see the data entered',() => {
-    cy.log(' >>>> ! Page not working ! <<<<');
+Then('he should see multiple error messages',() => {
+    userDataPage.checkErrorMessages();
 })
